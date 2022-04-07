@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/workspace/demo-pipeline") {
+                dir("/Users/abhijeet.bansode/Jenkins/workplace/demo-pipeline") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             }
